@@ -18,9 +18,9 @@ download_options = {
 
 # song directory
 if not os.path.exists('songs'):
-	os.mkdir('Songs')
+	os.mkdir('songs')
 else:
-	os.chdir('Songs')
+	os.chdir('songs')
 
 # download songs
 with youtube_dl.YoutubeDL(download_options) as dl:
