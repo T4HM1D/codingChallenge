@@ -17,10 +17,10 @@ download_options = {
 }
 
 # song directory
-if not os.path.exists('songs'):
-	os.mkdir('songs')
+if not os.path.exists('Songs'):
+	os.mkdir('Songs')
 else:
-	os.chdir('songs')
+	os.chdir('Songs')
 
 # download songs
 with youtube_dl.YoutubeDL(download_options) as dl:
